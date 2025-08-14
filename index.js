@@ -28,6 +28,7 @@ function renderProjects(Projects, full) {
 }
 
 function projectLoad(element) {
+    console.log("load")
     let name = element.id.split("project-")[1]
     window.location = `project_page.html#${name}`
 }

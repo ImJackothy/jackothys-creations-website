@@ -29,7 +29,7 @@ function renderProjects(Projects, full) {
 
 function projectLoad(element) {
     let name = element.id.split("project-")[1]
-    window.location = `file:///home/jackothy/Desktop/JackothyCreations/project_page.html#${name}`
+    window.location = `project_page.html#${name}`
 }
 
 

@@ -1,0 +1,211 @@
+body {
+    height: 100%;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image:
+        radial-gradient(ellipse at top, #83d0f4, transparent),
+        radial-gradient(ellipse at bottom, #ffe079, transparent);
+}
+
+
+#projectExample {
+    display: none;
+}
+
+.invisibleButton {
+    background: #ffffff00;
+    border: none;
+}
+
+.socialLayout {
+    display: flex;
+    flex-direction: row;
+    margin-top: 38vh;
+    margin-left: 29vw;
+
+}
+
+.socialLayout button {
+    margin-left: 1vw;
+    display: flex;
+    background: none;
+    border: none;
+    width: 7vw;
+    height: 7vw;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: rgba(250, 232, 232, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(250, 232, 232, 0.62);
+    height: 10vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.navbarElement {
+    margin-top: -1vw;
+    margin-right: 5vw;
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 7vw;
+    height: 7vw;
+}
+
+.navbarMargin {
+    margin-top: 25vh;
+}
+
+.logoElement {
+    margin-top: 0.5vw;
+    margin-right: 5vw;
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+.navbarImg {
+    border-radius: 20px;
+    width: 7vw;
+    height: 7vw;
+}
+
+.logoImg {
+    display: block;
+    width: 40vw;
+    height: 10vw;
+    margin-right: 1vw;
+    margin-top: -1vw;
+}
+
+.imageLayout {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.imageLayout img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7vw;
+    height: 7vw;
+}
+
+.navbarInfo {
+    display: none;
+}
+
+.navbarElement img:hover + .navbarInfo {
+    display: block;
+}
+
+
+
+.projects {
+    padding-top: 12vw;
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog {
+    padding-top: 12vw;
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.blogElement {
+    border-bottom: 1px solid black;
+}
+
+.blogLayout {
+    background: rgba(250, 119, 119, 0.581);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 2px solid rgba(250, 232, 232, 1);
+}
+
+.projectContainer {
+    width: 40vw;
+    padding: 10px;
+    margin-bottom: 35px;
+    /* From https://css.glass */
+    background: rgba(250, 232, 232, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 2px solid rgba(250, 232, 232, 1);
+}
+
+.full_projectContainer {
+    width: 75vw;
+    padding: 10px;
+    margin-bottom: 35px;
+    /* From https://css.glass */
+    background: rgba(250, 232, 232, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 2px solid rgba(250, 232, 232, 1);
+}
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.projectTitle {
+    margin-left: 1vw;
+}
+
+.socialImg { 
+    border-radius: 20px;
+    width: 2vw;
+    height: 2vw;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    
+}
+.body {
+    display: block;
+}
+
+.projectImg {
+    width: 7vw;
+    height: 7vw;
+}
+.sm_projectImg {
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.paddLeft {
+    margin-left: 4vw;
+}
+
+.paddDown {
+    margin-top: 1vw;
+}

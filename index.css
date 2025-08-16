@@ -157,6 +157,7 @@ br {
     backdrop-filter: blur(7.8px);
     -webkit-backdrop-filter: blur(7.8px);
     border: 2px solid rgba(250, 232, 232, 1);
+    width: 55vw;
 }
 
 
@@ -302,7 +303,7 @@ br {
     .blog {
         align-self: center;
         height: 50vh;
-        width: 80vw;
+        width: 90vw;
         flex-direction: row;
         overflow-y: auto;
     }
@@ -324,6 +325,10 @@ br {
 
     .projectContainer {
         width: 60vw;
+    }
+
+    .blogElement {
+        width: 85vw;
     }
 
     

@@ -3,13 +3,22 @@ function renderProjects(Projects, full) {
 
     for (let i = 0; i<Projects.length; i++) {
         let sel = Projects[i]
+        let offset = ""
+
+
         let size = "full_projectContainer"
 
         if (full === false) {
             size = "projectContainer"
         }
 
-        let exampleHtml = `<button id="project-${i}" class="invisibleButton" onclick="projectLoad(this)"><div class="${size}">
+        if (sel["wip"]) {
+            size += ` workBox`
+            offset = `<h1 class="workBoxMessage">W.I.P.</h1>`
+        }
+
+        let exampleHtml = `<button id="project-${i}" class="invisibleButton " onclick="projectLoad(this)"><div class="${size}">
+                    ${offset}
                     <div class="head">
                         <img src="Projects/${sel["img"]}" alt="" class="projectImg">
                         <h1 class="projectTitle">${sel["title"]}</h1>
@@ -20,7 +29,8 @@ function renderProjects(Projects, full) {
                     </div>
 
                     <img src="Img/github.png"} alt="" class="socialImg">
-                    '<img src="Img/mcpedl.png"} alt="" class="socialImg">
+                    <img src="Img/mcpedl.png"} alt="" class="socialImg">
+
                 </div></button>`
 
         document.getElementById("projects").innerHTML += exampleHtml
@@ -28,7 +38,6 @@ function renderProjects(Projects, full) {
 }
 
 function projectLoad(element) {
-    console.log("load")
     let name = element.id.split("project-")[1]
     window.location = `project_page.html#${name}`
 }
@@ -65,16 +74,22 @@ let navbar = `
     </div>`
 
 let all = [
-    {"title": "ComputerCraft BE", "desc": "A complete rewrite of the original computercraft mode made for java has been rewrote in TS and has near same functionality!", "img":"computer_craft.png"}
+    
 ]
 let highlighted = [
-    {"title": "ComputerCraft BE", "desc": "A complete rewrite of the original computercraft mode made for java has been rewrote in TS and has near same functionality!", "img":"computer_craft.png"}
+    
 ]
 
-let OrbitalSmasher = {"title": "Orbital Smasher", "desc": "A Game made in the 72-hour Game Jam ( Mini Jam 185 ).  I Worked a normal work week( 40 Hours/w ) while making this game, lots to improve", "img":"OrbitalSmasher_Icon.png"}
+let CCBE = {"title": "ComputerCraft BE", "desc": "A complete rewrite of the original computercraft mode made for java has been rewrote in TS and has near same functionality!", "img":"computer_craft.png", "wip":true}
+let OrbitalSmasher = {"title": "Orbital Smasher", "desc": "A Game made in the 72-hour Game Jam ( Mini Jam 185 ).  I Worked a normal work week( 40 Hours/w ) while making this game, lots to improve", "img":"OrbitalSmasher_Icon.png", "wip":false}
 
+all.push(CCBE)
 all.push(OrbitalSmasher)
+
+highlighted.push(CCBE)
 highlighted.push(OrbitalSmasher)
+
+
 let params = window.location.href.split("#")
 console.log(params)
 let pathname = document.title
